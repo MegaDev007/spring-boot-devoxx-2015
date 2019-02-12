@@ -1,0 +1,9 @@
+version: '3'
+services:
+  eclipse:
+    image: xavierdpt/eclipse
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix 
+      - ./projects:/home/user/projects
+    ports:
+      - "8080:8080"
